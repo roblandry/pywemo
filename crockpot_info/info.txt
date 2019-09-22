@@ -1,0 +1,51 @@
+###
+{ ip: '192.168.0.69',
+  port: '49153',
+  deviceType: 'urn:Belkin:device:crockpot:1',
+  friendlyName: 'Crock-Pot',
+  manufacturer: 'Belkin International Inc.',
+  manufacturerURL: 'http://www.belkin.com',
+  modelDescription: 'Belkin Plugin Socket 1.0',
+  modelName: 'Socket',
+  modelNumber: '1.0',
+  modelURL: 'http://www.belkin.com/plugin/',
+  serialNumber: '221409S0000319',
+  UDN: 'uuid:Crockpot-1_0-221409S0000319',
+  UPC: '123456789',
+  macAddress: 'B4750E7160D4',
+  firmwareVersion: 'WeMo_WW_2.00.7179.PVT',
+  iconVersion: '1|49153',
+  binaryState: '1',
+  iconList: { icon: [ [Object] ] },
+  serviceList:
+   { service:
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] },
+  presentationURL: '/pluginpres.html' }
+###
+{ host: '192.168.0.69',
+  port: '49153',
+  path: '/upnp/control/basicevent1',
+  method: 'POST',
+  headers:
+   { SOAPACTION: '"urn:Belkin:service:basicevent:1#GetCrockpotState"',
+     'Content-Length': 288,
+     'Content-Type': 'text/xml; charset="utf-8"',
+     'User-Agent': 'CyberGarage-HTTP/1.0' } }
+<?xml version="1.0" encoding="utf-8"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+ <s:Body>
+  <u:GetCrockpotState xmlns:u="urn:Belkin:service:basicevent:1">
+  </u:GetCrockpotState>
+ </s:Body>
+</s:Envelope>

@@ -12,7 +12,7 @@ import requests
 
 from .util import etree_to_dict, interface_addresses
 
-DISCOVER_TIMEOUT = 5
+DISCOVER_TIMEOUT = 10
 
 RESPONSE_REGEX = re.compile(r'\n(.*)\: (.*)\r')
 
