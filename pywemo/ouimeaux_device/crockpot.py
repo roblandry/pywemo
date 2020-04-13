@@ -123,18 +123,16 @@ class CrockPot(Switch):
         """
         self.set_mode(state, time)
 
-    def set_mode(self, mode_state, time_state):
+    def set_mode(self, mode_state, time_state=0):
         """
         Set the mode of this device (as int index of the Mode IntEnum).
 
         Provided for compatibility with the Switch base class.
         """
-        # Make sure we have a value for time to send to device.
-        if not time_state:
-            time_state = 0
         # Send the attribute list to the device
         # pylint: disable=maybe-no-member
-        self.basicevent.SetCrockpotState(mode=int(mode_state),time=int(time_state))
+        self.basicevent.SetCrockpotState(mode=int(mode_state), time=int(time_state))
 
         # Refresh the device state
         self.get_state(True)
+ 
